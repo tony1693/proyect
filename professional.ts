@@ -7,8 +7,9 @@ export class Professional {
     public nationality: string;
     public oscarsNumber: number;
     public profession: string;
+    public photo:string;
 
-constructor(name , age , weight , height , nationality , isRetired , oscarsNumber , profession) {
+constructor(name:string , age:number , weight:number , height:number , nationality:string , isRetired:boolean , oscarsNumber:number , profession:string , photo:string) {
     this.name = name;
     this.age = age;
     this.weight = weight;
@@ -17,6 +18,7 @@ constructor(name , age , weight , height , nationality , isRetired , oscarsNumbe
     this.nationality = nationality;
     this.oscarsNumber = oscarsNumber;
     this.profession = profession;
+    this.photo = photo;
 
 }
 attributesShow():void {
