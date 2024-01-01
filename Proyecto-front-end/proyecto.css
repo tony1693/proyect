@@ -1,0 +1,115 @@
+:root{
+    --primaryColor:black;
+    --secundaryColor:whitesmoke;
+
+}
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--primaryColor);
+    width: 1244px;
+}
+@media screen and (max-width: 640px){
+    .container2{
+        display:none;
+    }
+    
+}
+.container2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.letra{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    color: var(--secundaryColor);
+}
+.cartelera{
+    background-color: var(--primaryColor);
+    height: 400px;
+}
+.portada{
+    background-color:var(--primaryColor);
+    height: 200px;
+    width: 1255px;
+    position: relative;
+    top: 50px;
+    right: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.letra1{
+    color: var(--secundaryColor);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#container3{
+    background-color: var(--primaryColor);
+    height: 800px;
+    width: 104%;
+    position: relative;
+    right: 25px;
+    
+}
+.card-text{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--primaryColor);
+    color: var(--secundaryColor);
+}
+#contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.titutlo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: red;
+    height: 200px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+/* #tituloProfesionales{ */
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    /* height: 50px; */
+    /* position: relative; */
+    /* background-color: var(--primaryColor); */
+/* } */
+#contenedor2{
+    height: 900px;
+    width: 100%;
+    background-color:var(--primaryColor);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    right: 10px;
+
+}
+#contenedor3{
+    position: relative;
+    top: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    height: 350px;
+}
+#containerTitle{
+    color: var(--primaryColor);
+}
+.results{
+    width: 800px;
+    height: 600px;
+    position: relative;
+    left: 100px;
+}

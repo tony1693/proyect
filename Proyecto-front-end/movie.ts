@@ -1,4 +1,4 @@
-import {Professional} from "./professional";
+import {Professional} from "../professional";
 
 const person1 = new Professional("tony",30,80,1.98,"Española",false,0,"Actor", "./JIM-CARREY.jpg");
 const person2 =new Professional("Nuria",31,60,1.63,"Española",false,0,"Actriz","./Jenifer-Aniston.webp");
@@ -18,14 +18,15 @@ export class Movie {
     public producer: string
     public distributor: string;
     public genre:string;
-    public photo:string
+    public photo:string;
+    public id:number;
 
-constructor(title:string, releaseYear:number, nacionality:string , genre:string, photo:string) {
+constructor(title:string, photo:string, id:number) {
 
     this.title = title;
-    this.releaseYear = releaseYear;
+    this.releaseYear = 0;
     this.actors = [];
-    this.nacionality = nacionality;
+    this.nacionality = "";
     this.director = "";
     this.writer =  "";
     this.language = "";
@@ -34,9 +35,9 @@ constructor(title:string, releaseYear:number, nacionality:string , genre:string,
     this.mainCharacterName = "";
     this.producer = "";
     this.distributor = "";
-    this.genre = genre;
+    this.genre = "";
     this.photo = photo;
-
+    this.id = id;
 }
 attributesShow():void {
     for (let propiedad of Object.keys(Professional)) {
